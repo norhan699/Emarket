@@ -31,11 +31,24 @@ namespace Emarket.Controllers
 
         public ActionResult Layout()
         {
+
+            EmarketDBEntities emarketDB = new EmarketDBEntities();
+            var categorylist = emarketDB.Categories.ToList();
+            SelectList list = new SelectList(categorylist, "id","name");
+
+            ViewBag.CategoryList = list;
+
+
             var record = db.Products.ToList();
             return View(record);
         }
         public ActionResult Search(string key)
         {
+            EmarketDBEntities emarketDB = new EmarketDBEntities();
+            var categorylist = emarketDB.Categories.ToList();
+            SelectList list = new SelectList(categorylist, "id", "name");
+            ViewBag.CategoryList = list;
+            //
             //var categoryID = (from p in db.Categories
             //                  where p.name == key
             //                  select new Category { id = p.id });
@@ -48,6 +61,8 @@ namespace Emarket.Controllers
             //  SqlCommand cmd = new SqlCommand(categoryID);  
             //  int parsed = Convert.ToInt32(categoryID);
             //  var listOfProducts = db.Products.Where(x => x.id == parsed).ToList();
+
+
             return View(listOfProducts);
         }
         public ActionResult MoreInfo(int id)
@@ -57,6 +72,7 @@ namespace Emarket.Controllers
             using (db)
             {
 				P = db.Products.Include(x => x.Category).SingleOrDefault(p => p.id == id);
+
             }
             return View(P);
         }

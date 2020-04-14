@@ -547,7 +547,6 @@ E:\Third year\Second term\IA\projct\Emarket\bin\System.Web.WebPages.Razor.xml
 E:\Third year\Second term\IA\projct\Emarket\bin\Newtonsoft.Json.xml
 E:\Third year\Second term\IA\projct\Emarket\bin\Antlr3.Runtime.pdb
 E:\Third year\Second term\IA\projct\Emarket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Third year\Second term\IA\projct\Emarket\obj\Debug\Emarket.csprojAssemblyReference.cache
 E:\Third year\Second term\IA\projct\Emarket\obj\Debug\Emarket.csproj.CopyComplete
 E:\Third year\Second term\IA\projct\Emarket\obj\Debug\Emarket.dll
 E:\Third year\Second term\IA\projct\Emarket\obj\Debug\Emarket.pdb

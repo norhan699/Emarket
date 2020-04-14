@@ -11,16 +11,18 @@
     <h2><b><span class="glyphicon glyphicon-list-alt ">Products</span></b></h2>
 </p>
 <p>
-    @{
-        var options = new List<SelectListItem>();
+    @*@{
+            var options = new List<SelectListItem>();
 
-        foreach (var item in Model)
-        {
-            options.Add(new SelectListItem { Text = item.Category.name, Value = item.Category.name });
-        }
-        ViewData["options"] = options;
+            foreach (var item in Model)
+            {
+                options.Add(new SelectListItem { Text = item.Category.name, Value = item.Category.name });
+            }
+            ViewData["options"] = options;
 
-    }
+        }*@
+
+    @Html.DropDownList("CategoryList", ViewBag.CategoryList as SelectList, "categories list")
 
 <p>
     @using (Html.BeginForm("Search", "products", FormMethod.Get))
