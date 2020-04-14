@@ -221,6 +221,7 @@
     <Content Include="Views\Products\Layout.cshtml" />
     <Content Include="Views\Products\Search.cshtml" />
     <Content Include="Views\Products\MoreInfo.cshtml" />
+    <Content Include="Views\Products\Add.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
