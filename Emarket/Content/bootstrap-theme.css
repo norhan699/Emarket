@@ -49,7 +49,8 @@ fieldset[disabled] .btn-danger {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.btn-default .badge,
+.btn-
+.badge,
 .btn-primary .badge,
 .btn-success .badge,
 .btn-info .badge,
@@ -61,7 +62,10 @@ fieldset[disabled] .btn-danger {
 .btn.active {
   background-image: none;
 }
-.btn-default {
+.btn-
+
+
+{
   background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
   background-image: -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
